@@ -3,9 +3,9 @@
  */
 import test from 'tape';
 import index from '../src/index';
-import version from '../package.json';
+import { version } from '../package.json';
 
-test('async index test', (t) => {
+test('async index test', t => {
     t.plan(1);
     const message = `current version is ${version}`;
 
