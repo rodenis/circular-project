@@ -6,7 +6,7 @@
   "jsnext:main": "src/index.js",
   "scripts": {
     "build": "./node_modules/.bin/rollup -c",
-    "test": "./node_modules/.bin/tape -r babel-register test/**/*.js",
+    "test": "./node_modules/.bin/tape -r babel-register test/**/*.js | ./node_modules/.bin/tap-spec",
     "lint": "./node_modules/.bin/eslint --quiet **/**/*.js",
     "clean": "rm -rf ./build/*",
     "precommit": "npm run clean && npm run test && npm run lint",

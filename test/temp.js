@@ -9,5 +9,5 @@ test('async index test', t => {
     t.plan(1);
     const message = `current version is ${version}`;
 
-    setTimeout(() => t.equal(index(), message), 500);
+    setTimeout(() => t.equal(index(), message, 'Must have correct version'), 500);
 });
